@@ -1,0 +1,146 @@
+<mat-sidenav-container class="sidenav-container" *ngIf="config.shouldRun" [hasBackdrop]="config.hasBackdrop">
+    <mat-sidenav #sidenav [mode]="config.mode" [position]="config.position" [opened]="config.isOpened">
+        <div class="profile-content" style="color: aliceblue;">
+            <h2>Horizon Trading Co.</h2>
+        </div>
+        <div class="container menu-container">
+            <div class="sidenav">
+                <div class="menu-item">
+                    <mat-icon>security</mat-icon>
+                    Authority
+                    <div class="submenu">
+                        <div class="submenu-item">Role
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'permission-form'">Role Form</div>
+                                <div class="subsubmenu-item" [routerLink]="'permission-list'">Role List</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">User
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'user-form'">User Form</div>
+                                <div class="subsubmenu-item" [routerLink]="'user-list'">User List</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Role
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'role-form'">Role-Form</div>
+                                <div class="subsubmenu-item" [routerLink]="'role-list'">Role-List</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">Project Configuration
+                    <div class="submenu">
+                        <div class="submenu-item">Customer
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'customer-form'">customer-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'customer-list'">customer-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Employee
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'employee-form'">employee-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'employee-list'">employee-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Category
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'category-form'">category-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'category-list'">category-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Discount
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'discount-form'">discount-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'discount-list'">discount-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Product
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'product-form'">product-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'product-list'">product-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Supplier
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'supplier-form'">supplier-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'supplier-list'">supplier-list</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">Project Data
+                    <div class="submenu">
+                        <div class="submenu-item">Inventory
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'inventory-form'">inventory-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'inventory-list'">inventory-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Sales
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'order-form'">sales-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'order-list'">sales-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Payment
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'payment-form'">payment-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'payment-list'">payment-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Review
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'review-form'">review-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'review-list'">review-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Transaction
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'transaction-form'">transaction-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'transaction-list'">transaction-list</div>
+                            </div>
+                        </div>
+                        <div class="submenu-item">Puchase
+                            <div class="subsubmenu">
+                                <div class="subsubmenu-item" [routerLink]="'purchase-form'">purchase-form</div>
+                                <div class="subsubmenu-item" [routerLink]="'purchase-list'">purchase-list</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">Report
+                    <div class="submenu">
+                        <div class="submenu-item" [routerLink]="'sales-report'">sales-report</div>
+                        <div class="submenu-item" [routerLink]="'inventory-report'">inventory-report</div>
+                    </div>
+                </div>
+
+                <div class="menu-item" [routerLink]="'about'">About
+                </div>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="page-body">
+            <div style="position: sticky; top: 0;">
+                <mat-toolbar style="background-color:rgb(248, 115, 7); display: flex; justify-content: center; align-items: center;">
+                    <button mat-icon-button (click)="sidenav.toggle()" class="example-icon" style="color: aliceblue;" aria-label="Example icon-button with menu icon">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                    <span style="color: white; margin: 0px 100px;">Traders Solution Application</span>
+                    <div class="topnav" style="margin-left: auto;">
+                        <div class="topnav-right">
+                            <button (click)="logout()">
+                                <h2>Logout</h2>
+                            </button>
+                        </div>
+                    </div>
+                </mat-toolbar>
+            </div>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
